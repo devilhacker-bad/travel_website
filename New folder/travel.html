@@ -1,0 +1,414 @@
+<html>
+<!-- diff between flex and inline  -->
+<!--  -->
+
+<head>
+
+    <title>Document</title>
+    <style>
+        #part1 {
+            /* background-color: blue; */
+            background-image: url(oop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+            height: 900px;
+        }
+
+
+        #outer {
+            padding-top: 5px;
+        }
+
+        li {
+            display: inline;
+            /* padding: 40px */
+            padding-top: px;
+
+
+        }
+
+        #air {
+            padding: 40px;
+            cursor: crosshair;
+            font-size: larger;
+            font-weight: bolder;
+            color: azure;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #li {
+            float: right;
+        }
+
+        .li {
+            padding: 20px;
+            text-transform: capitalize;
+            font-size: large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            cursor: pointer;
+            color: azure;
+
+        }
+
+        .li li:hover {
+            background-color: rgb(181, 199, 199);
+
+        }
+
+        #body {
+            background-color: antiquewhite;
+            width: 30%;
+            padding: 40px;
+            margin: 80px;
+            height: 40%;
+            border-radius: 20px;
+            margin-bottom: 70px;
+
+        }
+
+        .btn {
+            float: right;
+            background: red;
+            height: 30px;
+            width: 80px;
+            font-size: 20px;
+            border-radius: 10px;
+            text-transform: capitalize;
+
+        }
+
+        #dates {
+            display: flex;
+            text-transform: uppercase;
+        }
+
+        #where {
+            width: 250px;
+            text-transform: uppercase;
+
+        }
+
+
+
+        #body3 {
+            display: flex;
+            /* padding: 80px; */
+            justify-content: center;
+            
+            margin-bottom:20px;
+
+        }
+
+        #body4 {
+            display: flex;
+            
+
+        }
+
+        #place {
+            margin: 30px;
+            padding: 30px;
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1em;
+            font-family: sans-serif;
+        }
+
+        #main {
+            padding: 20px;
+        }
+        #col{
+           width: 500%;
+            height: 500px;
+           
+            font-size: large;
+            margin-right:150px ;
+            padding: 15px;
+            /* border: 2px solid red; */
+            
+        }
+        #body4 #main{
+            margin-left: 10px;
+        }
+        #main img{
+            /* border-radius: 30px; */
+        }
+        
+        
+        #pen:target{
+             display: inline-block; 
+       /* background-color: rgba(1,1,1, 0.7); */
+        text-align: center; 
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       height: 10%;
+       width: 10%;
+       z-index: 1500;
+        
+       
+       /* vertical-align:middle; */
+       /* display: none; */
+        }
+
+        #pen{
+            display: none;
+            padding-left: 280px; 
+
+        }
+        #manju{
+            display: none;
+            padding-left: 280px;
+        }
+       
+       #manju:target
+        {
+        display: inline-block; 
+       
+        text-align: center; 
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       height: 10%;
+       width: 10%;
+       z-index: 1500;
+        
+       
+       /* vertical-align:middle; 
+       display: none; */
+        }
+        #pen1:target{
+             display: inline-block; 
+       /* background-color: rgba(1,1,1, 0.7); */
+        text-align: center; 
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       height: 10%;
+       width: 10%;
+       z-index: 1500;
+        
+       
+       /* vertical-align:middle; */
+       /* display: none; */
+        }
+
+        #pen1{
+            display: none;
+            padding-left: 280px; 
+
+        }
+
+        #pen2:target{
+             display: inline-block; 
+       /* background-color: rgba(1,1,1, 0.7); */
+        text-align: center; 
+       position: fixed;
+       top: 0px;
+       left: 0px;
+       height: 10%;
+       width: 10%;
+       z-index: 1500;
+        
+       
+       /* vertical-align:middle; */
+       /* display: none; */
+        }
+
+        #pen2{
+            display: none;
+            padding-left: 280px; 
+
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="cose">
+    <div id="part1">
+        <div id="outer">
+            <ul>
+                <li id="air">AIRBNB</li>
+                <div id="li">
+                    <li class="li">Host an experience</li>
+                    <li class="li">Sign Up</li>
+                    <li class="li">Log In</li>
+                </div>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+        <div id="body">
+
+            <div>
+                <div id="header">
+                    <p>
+                    <h1>Book unique places to stay and things to do. </h1>
+                    </p>
+                </div>
+                <div id="where">
+                    <h3>where</h3>
+                    <input type="text">
+                </div>
+                <div id="dates">
+                    <div id="date">
+                        <h2>CHECK-IN</h2>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <h2>
+                            CHECK-OUT
+                        </h2>
+                        <input type="date">
+                    </div>
+                </div>
+                <div id="where">
+                    <h2>where</h2>
+                    <select>
+                        <option value="">
+                            1 guest
+                        </option>
+                        <option value="">
+                            2 guest
+                        </option>
+                    </select>
+                </div>
+                <div id="button">
+                    <button class="btn">
+                        search
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="place">
+        <h1>Places to visit</h1>
+        <div id="body3">
+
+            <div id="col">
+                <p> ENTIRE CABIN · JOSHUA TREE </p>
+
+                <p>Joshua Tree Homesteader Cabin</p>
+
+                <p>₹ 3,421 / night</p>
+
+
+                <p> &#9733; &#9733; &#9733; &#9733; &#9733; 555 • Superhost</p>
+            </div>
+
+            <div id="main">
+                <a href="#pen2"><img src="image 1.jpg" alt="" height="40%" width="68%"></a>
+                <p>ENTIRE APARTMENT · CITTÀ DELLA PIEVE</p>
+
+                <p>Airstream 'Glamping' in Andalucia!</p>
+
+                <p>₹ 2,254 / night</p>
+                <p>555 • Superhost</p>
+                <div id="pen2">
+                    <a href="#pen2"><img src="image 1.jpg" height="800%"  width=""></a>
+                    <a href="#cose">close this</a>
+                </div>
+            </div>
+
+            <div id="main">
+                <a href="#pen1"><img src="image2.jpg" alt="" height="40%" width="68%"></a>
+                <p>ENTIRE APARTMENT · CITTÀ DELLA PIEVE </p>
+
+                <p>Airstream 'Glamping' in Andalucia! </p>
+
+                <p>₹ 2,254 / night</p>
+
+                <p>&#9733; &#9733; &#9733; &#9733; &#9733;
+                    555 • Superhost</p>
+                    <div id="pen1">
+                        <a href="#pen1"><img src="image2.jpg" height="800%"  width=""></a>
+                        <a href="#cose">close this</a>
+                    </div>
+            </div>
+
+
+        </div>
+
+        <div id="body4">
+            <div id="col">
+                <p> ENTIRE CABIN · JOSHUA TREE</p>
+
+                <p>
+                    Leccio Apartment - Cimbolello
+                </p>
+
+                <p>₹ 5,214 / night</p>
+
+                <p>&#9733; &#9733; &#9733; &#9733; &#9733;
+                    555 • Superhost</p>
+            </div>
+            <div id="main">
+                <a href="#pen"><img src="sparsh.jpg" alt="" height="40%" width="68%"></a>
+
+                <p>ENTIRE CABINJOSHUA TREE</p>
+
+                <p>Leccio Apartment - Cimbolello</p>
+
+                <p>₹ 5,214 / night</p>
+
+                <p>&#9733; &#9733; &#9733; &#9733; &#9733;
+                    555 • Superhost</p>
+                    <div id="pen">
+                        <a href="#pen"><img src="sparsh.jpg" height="800%"  width=""></a>
+                        <a href="#cose">close this</a>
+                    </div>
+            </div>
+            <div id="main">
+
+                <a href="#manju"><img src="ravi.jpg" alt="" height="40%" width="68%"></a>
+
+                <p> ENTIRE CABIN JOSHUA TREE·</p>
+
+                <p>Leccio Apartment - Cimbolello</p>
+
+                <p> ₹ 5,214 / night</p>
+
+                <p>&#9733; &#9733;&#9733; &#9733; &#9733;
+                    555 • Superhost</p>
+                    <div id="manju">
+                        <a href="#manju"><img src="ravi.jpg" height="800%"  width=""></a>
+                        <a href="#cose">close this</a>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

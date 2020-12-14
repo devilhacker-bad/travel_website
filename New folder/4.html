@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function validation() {
+            var username = document.valid.name.value
+            var password = document.valid.name1.value
+
+            if (username == null || username == "") {
+                alert("name can't be blank")
+                return false
+            }
+            else if (password == "" || password == null) {
+                alert("password can't be blank")
+                return false
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="style">
+        <form action="travel.html" name="valid" onsubmit=" return validation()">
+            <div>
+                <label for="">Username</label>
+                <input type="text" placeholder="Enter username" name="name">
+            </div>
+            <div>
+                <br>
+                <label for="">Password</label>
+                <input type="password" placeholder="enter password" name="name1" min="10">
+            </div>
+            <br>
+            <div>
+                <label for="">email</label>
+                <input type="email" placeholder="enter email">
+            </div>
+            <br>
+            <div>
+                <label for="">DOB</label>
+                <input type="date">
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+    </div>
+    </form>
+
+
+</body>
+
+</html>

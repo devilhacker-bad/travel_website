@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    button {
+        background-color: aqua;
+        color: black;
+        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 30px;
+    }
+</style>
+
+<script>
+  function Change(){
+     var myVar =  document.getElementById('myPara')
+     console.log(myVar.innerHTML)
+     myVar.innerHTML = "My Solar System"
+  }
+
+</script>
+
+<body>
+
+    <div id="Solar">
+
+        <h1>My JavaScript Page</h1>
+
+        <p id="myPara">
+            The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either
+            directly
+            or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the
+            remainder
+            being smaller objects, the dwarf planets and small Solar System bodies.
+        </p>
+
+        <button onclick="Change()">Show/Hide</button>
+
+    </div>
+</body>
+
+</html
